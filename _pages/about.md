@@ -1,7 +1,7 @@
 ---
 permalink: /
 title: "This is a personal portfolio website for Saleha Jafri based on the Academic.guthub.io theme"
-author_profile: false
+author_profile: true
 redirect_from: 
   - /about/
   - /about.html
