@@ -6,7 +6,7 @@ author_profile: true
 redirect_from:
   - /resume
 ---
-
+[DOwnload Resume](https://salehajafri.github.io)
 {% include base_path %}
 
 Education
