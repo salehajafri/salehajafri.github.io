@@ -9,13 +9,6 @@ redirect_from:
 [Download Resume](https://salehajafri.github.io)
 {% include base_path %}
 
-%Education
-%======
-
-
-%Work experience
-%======
-
   
 Skills
 ======
