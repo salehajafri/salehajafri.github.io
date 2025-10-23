@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Saleha Jafri | Economist"
+title                    : "A. Saleha Jafri"
 title_separator          : "-"
 name                     : &name "Saleha Jafri"
 description              : "I am an Economist from Toronto, ON"
