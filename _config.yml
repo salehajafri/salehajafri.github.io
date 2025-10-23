@@ -22,7 +22,7 @@ repository               : "salehajafri/salehajafri.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "/sal_image.png"
+  avatar           : "sal_image.png"
   name             : "A. Saleha Jafri"
   pronouns         : # example: "she/her"  
   bio              : "Economist"
