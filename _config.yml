@@ -23,9 +23,9 @@ repository               : "salehajafri/salehajafri.github.io"
 author:
   # Biographic information
   avatar           : "sal_image.png"
-  name             : "A. Saleha Jafri"
+  # name             : "A. Saleha Jafri"
   pronouns         : # example: "she/her"  
-  bio              : "Economist"
+ # bio              : "Economist"
   location         : "Toronto, ON"
   employer         : "McMaster University"
   uri              : # URL
