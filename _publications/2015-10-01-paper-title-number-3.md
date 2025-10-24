@@ -1,7 +1,7 @@
 ---
 title: "Impact of Preference Heterogeneity on Entrepreneurship"
 collection: publications
-category: manuscripts
+category: jmp
 # date: (omit if you don't want the year anywhere)
 abstracturl: "https://example.com/impact_pref_heterogeneity_abstract.pdf"
 paperurl: "https://example.com/impact_pref_heterogeneity.pdf"
