@@ -6,35 +6,31 @@ author_profile: true
 ---
 
 <h2>Job Market Paper</h2>
-
 {% assign jmpapers = site.publications | where: "category", "jmp" %}
 {% for p in jmpapers %}
-
-**{{ p.title }}**
-
-{% if p.abstracturl %}
-- [Abstract (PDF)]({{ p.abstracturl | relative_url }})
-{% endif %}
-{% if p.paperurl %}
-- [Full Paper (PDF)]({{ p.paperurl | relative_url }})
-{% endif %}
-
+  <p><strong>{{ p.title }}</strong></p>
+  <ul>
+    {% if p.abstracturl %}
+      <li><a href="{{ p.abstracturl | relative_url }}">Abstract (PDF)</a></li>
+    {% endif %}
+    {% if p.paperurl %}
+      <li><a href="{{ p.paperurl | relative_url }}">Full Paper (PDF)</a></li>
+    {% endif %}
+  </ul>
 {% endfor %}
 
----
+<hr />
 
 <h2>Working Papers</h2>
-
 {% assign wpapers = site.publications | where: "category", "working" %}
 {% for p in wpapers %}
-
-**{{ p.title }}**
-
-{% if p.abstracturl %}
-- [Abstract (PDF)]({{ p.abstracturl | relative_url }})
-{% endif %}
-{% if p.paperurl %}
-- [Full Paper (PDF)]({{ p.paperurl | relative_url }})
-{% endif %}
-
+  <p><strong>{{ p.title }}</strong></p>
+  <ul>
+    {% if p.abstracturl %}
+      <li><a href="{{ p.abstracturl | relative_url }}">Abstract (PDF)</a></li>
+    {% endif %}
+    {% if p.paperurl %}
+      <li><a href="{{ p.paperurl | relative_url }}">Full Paper (PDF)</a></li>
+    {% endif %}
+  </ul>
 {% endfor %}
