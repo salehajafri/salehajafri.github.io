@@ -1,5 +1,4 @@
 ---
----
 title: "Impact of Preference Heterogeneity on Entrepreneurship"
 collection: publications
 category: manuscripts
