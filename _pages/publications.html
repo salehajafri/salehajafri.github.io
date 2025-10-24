@@ -9,14 +9,15 @@ author_profile: true
 
 {% assign jmpapers = site.publications | where: "category", "jmp" %}
 {% for p in jmpapers %}
+
 **{{ p.title }}**
 
-{%- if p.abstracturl -%}
+{% if p.abstracturl %}
 - [Abstract (PDF)]({{ p.abstracturl | relative_url }})
-{%- endif -%}
-{%- if p.paperurl -%}
+{% endif %}
+{% if p.paperurl %}
 - [Full Paper (PDF)]({{ p.paperurl | relative_url }})
-{%- endif -%}
+{% endif %}
 
 {% endfor %}
 
@@ -26,13 +27,14 @@ author_profile: true
 
 {% assign wpapers = site.publications | where: "category", "working" %}
 {% for p in wpapers %}
+
 **{{ p.title }}**
 
-{%- if p.abstracturl -%}
+{% if p.abstracturl %}
 - [Abstract (PDF)]({{ p.abstracturl | relative_url }})
-{%- endif -%}
-{%- if p.paperurl -%}
+{% endif %}
+{% if p.paperurl %}
 - [Full Paper (PDF)]({{ p.paperurl | relative_url }})
-{%- endif -%}
+{% endif %}
 
 {% endfor %}
