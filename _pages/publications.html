@@ -24,7 +24,12 @@ author_profile: true
 <h2>Working Papers</h2>
 {% assign wpapers = site.publications | where: "category", "working" %}
 {% for p in wpapers %}
-  <p><strong>{{ p.title }}</strong></p>
+  <p>
+    <strong>{{ p.title }}</strong>
+    {% if p.authors %}
+      <em>{{ p.authors }}</em>
+    {% endif %}
+  </p>
   <ul>
     {% if p.abstracturl %}
       <li><a href="{{ p.abstracturl | relative_url }}">Abstract (PDF)</a></li>
