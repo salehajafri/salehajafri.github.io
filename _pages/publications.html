@@ -28,9 +28,6 @@ author_profile: true
       {% if p.paperurl %}
         <li><a href="{{ p.paperurl | relative_url }}">Full Paper (PDF)</a></li>
       {% endif %}
-      {% if p.slidesurl %}
-        <li><a href="{{ p.slidesurl | relative_url }}">Slides</a></li>
-      {% endif %}
     </ul>
   </article>
 {% endfor %}
