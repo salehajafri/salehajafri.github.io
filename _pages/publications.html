@@ -8,15 +8,31 @@ author_profile: true
 <h2>Job Market Paper</h2>
 {% assign jmpapers = site.publications | where: "category", "jmp" %}
 {% for p in jmpapers %}
-  <p><strong>{{ p.title }}</strong></p>
-  <ul>
-    {% if p.abstracturl %}
-      <li><a href="{{ p.abstracturl | relative_url }}">Abstract (PDF)</a></li>
+  <article class="pub">
+    <p><strong>{{ p.title }}</strong></p>
+
+    {% if p.abstract or p.content %}
+      <details>
+        <summary><strong>Abstract</strong></summary>
+        <div class="abstract">
+          {% if p.abstract %}
+            {{ p.abstract | markdownify }}
+          {% else %}
+            {{ p.content | markdownify }}
+          {% endif %}
+        </div>
+      </details>
     {% endif %}
-    {% if p.paperurl %}
-      <li><a href="{{ p.paperurl | relative_url }}">Full Paper (PDF)</a></li>
-    {% endif %}
-  </ul>
+
+    <ul>
+      {% if p.paperurl %}
+        <li><a href="{{ p.paperurl | relative_url }}">Full Paper (PDF)</a></li>
+      {% endif %}
+      {% if p.slidesurl %}
+        <li><a href="{{ p.slidesurl | relative_url }}">Slides</a></li>
+      {% endif %}
+    </ul>
+  </article>
 {% endfor %}
 
 <hr />
