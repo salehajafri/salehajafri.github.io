@@ -11,15 +11,11 @@ author_profile: true
   <article class="pub">
     <p><strong>{{ p.title }}</strong></p>
 
-    {% if p.abstract or p.content %}
+    {% if p.abstract %}
       <details>
-        <summary><strong>Abstract</strong></summary>
+        <summary class="abs-toggle"><strong>Abstract</strong></summary>
         <div class="abstract">
-          {% if p.abstract %}
-            {{ p.abstract | markdownify }}
-          {% else %}
-            {{ p.content | markdownify }}
-          {% endif %}
+          {{ p.abstract | markdownify }}
         </div>
       </details>
     {% endif %}
