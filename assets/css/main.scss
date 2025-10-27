@@ -41,3 +41,19 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+
+/* Make Abstract toggle look clickable */
+details > summary.abs-toggle {
+  cursor: pointer;
+  color: #0366d6;       /* GitHub blue */
+  text-decoration: underline;
+  list-style: none;
+}
+
+details > summary.abs-toggle::-webkit-details-marker { 
+  display: none; 
+}
+
+details[open] > summary.abs-toggle {
+  text-decoration: none;
+}
