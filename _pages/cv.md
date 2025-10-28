@@ -6,6 +6,7 @@ author_profile: true
 redirect_from:
   - /resume
 ---
-My CV is available [here](https://salehajafri.github.io).
+My CV is available [here](/files/Resume.pdf).
+
 {% include base_path %}
 
