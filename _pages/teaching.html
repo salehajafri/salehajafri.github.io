@@ -25,6 +25,20 @@ author_profile: true
       performance.
     </div>
   </li>
+
+  <script>
+  document.addEventListener("click", function (e) {
+    const link = e.target.closest(".desc-toggle");
+    if (!link) return;
+    e.preventDefault();
+    const sel = link.getAttribute("data-target");
+    const box = sel ? document.querySelector(sel) : link.parentElement.querySelector(".desc-text");
+    if (!box) return;
+    const show = getComputedStyle(box).display === "none";
+    box.style.display = show ? "block" : "none";
+    link.textContent = show ? "Hide Description" : "Description";
+  });
+</script>
 </ul>
 
 <hr />
