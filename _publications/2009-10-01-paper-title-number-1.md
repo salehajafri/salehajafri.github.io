@@ -1,5 +1,5 @@
 ---
-title: "Are Durables Durable?"
+title: "How Durable are Durables?"
 collection: publications
 category: working
 authors: "with Zachary Mahone"   # optional
