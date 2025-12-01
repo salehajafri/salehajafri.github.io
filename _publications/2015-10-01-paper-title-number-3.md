@@ -1,5 +1,5 @@
 ---
-title: "Credit Expansion and Scale of Entrepreneurship: Role of Heterogeneous Leisure Preferences"
+title: "Credit Expansion and the Scale of Entrepreneurship: The Role of Heterogeneous Preferences for Leisure"
 collection: publications
 category: jmp
 paperurl: "/files/JMP_draft.pdf"
